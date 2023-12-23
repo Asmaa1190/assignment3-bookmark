@@ -1,0 +1,48 @@
+body{
+    background-color:#F7EBDD;
+}
+.container .main{
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.411);
+    padding-bottom: 50px;
+}
+.container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+.container h1::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #FEC160;
+    z-index: -1;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.container h1:hover::after{
+    height: 80%;
+    top: 10%;
+    border-radius: 20px;
+}
+.bookmark-sec h2{
+    font-size: 30px;
+    font-family: 'Righteous', sans-serif;
+    font-size: bold;
+    color: #A8AB4B; 
+}
+.bookmark-sec h2 i{
+    color: #A8AB4B;
+}
+.bookmark-sec >div label{
+    font-weight: 600;
+}
+.bor{
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.411);
+    padding-bottom: 50px;
+}

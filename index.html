@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>assignment3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div class="container my-5  ">
+        <div class="text-center mb-5 main">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="bookmark-sec">
+            <h2 class="text-center mb-5">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div>
+                <label for="siteName" class="mb-2 lead "><span class="mx-2 "><i
+                            class="fa-solid fa-book-bookmark"></i></span> Site Name</label>
+                <input type="text" id="siteName" class="form-control mb-3 " placeholder="Bookmark Name" oninput="nameRegex()">
+            </div>
+            <div>
+
+                <label for="siteUrl" class="mb-2 lead  "><span class="mx-2 "><i class="fa-solid fa-link"></i></span>
+                    Site URL</label>
+                <input type="text" id="siteUrl" class="form-control mb-3 " placeholder="Website URL" oninput="siteRegex()">
+            </div>
+            <button class="btn btn-danger px-5 mt-3 sub" id="btn">Submit</button>
+            <div class="bor"></div>
+            <table class="table text-center mt-5">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableRow">
+                    
+                </tbody>
+            </table>
+        </div>
+        <table>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
